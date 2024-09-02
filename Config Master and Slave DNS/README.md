@@ -17,6 +17,9 @@ vim named.conf.options
 ```yml
 etc/bind/zones# vim sananetco.com.deb
 ```
-
+5.
+```yml
+/etc/bind/reverse# vim 1.168.192.in-addr.arpa
+```
 
 
