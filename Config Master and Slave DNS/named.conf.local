@@ -1,7 +1,8 @@
-zone "sananetco.com" {
+zone "sana.com" {
  type master;
- file "/etc/bind/zones/sananetco.com.deb";
+ file "/etc/bind/zones/sana.com.deb";
 };
+
 zone "1.168.192.in-addr.arpa" {
 type master;
 file "/etc/bind/reverse/1.168.192.in-addr.arpa";
