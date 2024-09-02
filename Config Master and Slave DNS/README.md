@@ -15,7 +15,7 @@ vim named.conf.options
 ```
 4.
 ```yml
-etc/bind/zones# vim sananetco.com.deb
+etc/bind/zones# vim sana.com.deb
 ```
 5.
 ```yml
@@ -30,11 +30,11 @@ systemctl reload bind9
 
 nslookup 
   > server 127.0.0.1 …
-  > sananetco.com …
+  > sana.com …
   >set q=ns
-  > sananetco.com …
+  > sana.com …
   >set q=a
-  >ns1.sananetco.com …
+  >ns1.sana.com …
 ```
 
 
