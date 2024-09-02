@@ -21,5 +21,20 @@ etc/bind/zones# vim sananetco.com.deb
 ```yml
 /etc/bind/reverse# vim 1.168.192.in-addr.arpa
 ```
+6. Test DNS Server
+```yml
+
+named-checkconf
+rndc reload
+systemctl reload bind9
+
+nslookup 
+  > server 127.0.0.1 …
+  > sananetco.com …
+  >set q=ns
+  > sananetco.com …
+  >set q=a
+  >ns1.sananetco.com …
+```
 
 
