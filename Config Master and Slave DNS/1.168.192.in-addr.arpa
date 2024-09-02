@@ -1,0 +1,15 @@
+; Reverse zone file for 1.168.192.in-addr.arpa
+;
+$TTL 3600
+@ IN SOA vm3.sananetco.com. admin.sananetco.com. (
+  2023062101 ; Serial
+  3600 ; Refresh
+  1800 ; Retry
+  604800 ; Expire
+  86400 ; Minimum TTL
+)
+@ IN NS vm3.sananetco.com.
+; PTR Record
+8 IN PTR vm3.sananetco.com.
+9 IN PTR vm4.sananetco.com.
+10 IN PTR www.sananetco.com.
