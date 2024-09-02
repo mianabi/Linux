@@ -13,6 +13,10 @@ vim named.conf.local
 ```yml
 vim named.conf.options
 ```
+4.
+```yml
+etc/bind/zones# vim sananetco.com.deb
+```
 
 
 
