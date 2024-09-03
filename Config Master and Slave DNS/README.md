@@ -37,4 +37,8 @@ nslookup
   >ns1.sana.com …
 ```
 
+### Configs in slave DNS:
+```yml
+vim /etc/netplan/01-network-manager-all.yaml
+```
 
