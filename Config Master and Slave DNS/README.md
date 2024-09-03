@@ -48,4 +48,8 @@ apt install bind9 bind9-utils
 cd /etc/bind/
 vim named.conf.local
 ```
+8.
+```yml
+vim named.conf.options
+```
 
