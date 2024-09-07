@@ -1,27 +1,28 @@
-1.
+### STEP 1- Configs in Master DNS:
+1.1.
 ```yml
 vim /etc/netplan/01-network-manager-all.yaml
 ```
-2.
+1.2.
 ```yml
 netplan try
 apt install bind9 bind9-utils
 cd /etc/bind/
 vim named.conf.local
 ```
-3.
+1.3.
 ```yml
 vim named.conf.options
 ```
-4.
+1.4.
 ```yml
 etc/bind/zones# vim sana.com.deb
 ```
-5.
+1.5.
 ```yml
 /etc/bind/reverse# vim 1.168.192.in-addr.arpa
 ```
-6. Test DNS Server
+1.6. Test DNS Server
 ```yml
 
 named-checkconf
@@ -37,18 +38,19 @@ nslookup
   >ns1.sana.com …
 ```
 
-### Configs in slave DNS:
+### STEP 2 - Configs in slave DNS:
+2.1.
 ```yml
 vim /etc/netplan/01-network-manager-all.yaml
 ```
-7.
+2.2.
 ```yml
 netplan try
 apt install bind9 bind9-utils
 cd /etc/bind/
 vim named.conf.local
 ```
-8.
+2.3.
 ```yml
 vim named.conf.options
 ```
