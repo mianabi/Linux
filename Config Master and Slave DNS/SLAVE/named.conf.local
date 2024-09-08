@@ -1,6 +1,6 @@
-zone "sananetco.com" {
+zone "sana.com" {
  type slave;
- file "/etc/bind/slave/sananetco.com.slave";
+ file "/etc/bind/slave/sana.com.slave";
  masters { 192.168.1.8; };  // این تنظیم می تواند در فایل آپشنز نیز وارد شود که به همه زون ها اعمال خواهد شد
 };
 
