@@ -1,4 +1,4 @@
-# Sample config network for ubuntu on Server DNS
+# Sample config network ip Address for ubuntu on Server DNS
 network:
   version: 2
   renderer: networkd
