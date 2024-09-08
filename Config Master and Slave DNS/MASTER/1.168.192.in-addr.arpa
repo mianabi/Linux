@@ -1,4 +1,4 @@
-; Reverse zone file for 1.168.192.in-addr.arpa
+#; Reverse zone file for 1.168.192.in-addr.arpa
 ;
 $TTL 3600
 @ IN SOA vm3.sananetco.com. admin.sananetco.com. (
