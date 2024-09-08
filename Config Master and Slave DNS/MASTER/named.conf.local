@@ -1,8 +1,10 @@
+# path of Master Zone File
 zone "sana.com" {
  type master;
  file "/etc/bind/zones/sana.com.deb";
 };
 
+# path of Reverse Zone File
 zone "1.168.192.in-addr.arpa" {
 type master;
 file "/etc/bind/reverse/1.168.192.in-addr.arpa";
