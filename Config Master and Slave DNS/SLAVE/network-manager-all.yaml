@@ -1,3 +1,4 @@
+# Sample config For Network ip Address
 network:
   version: 2
   renderer: networkd
