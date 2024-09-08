@@ -1,3 +1,4 @@
+# Config of Zone Sana.com
 $TTL 3600
 @ IN SOA vm3.sana.com. admin.sana.com. (
 2023062105 ; Serial
