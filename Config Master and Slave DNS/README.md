@@ -1,3 +1,5 @@
+## Create Master And Slave DNS Server
+
 ### STEP 1- Configs in Master DNS:
 1.1.
 ```yml
