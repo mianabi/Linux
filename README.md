@@ -1,1 +1,1 @@
-### LinuX Best Practice
+### Linux Best Practice
