@@ -1,4 +1,4 @@
-### 1. ensure that
+### 1. ensure that ssh Service is Running
 ```yml
 systemctl status ssh
 systemctl start ssh
