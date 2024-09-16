@@ -1,4 +1,4 @@
-### 1.
+### 1. ensure that
 ```yml
 systemctl status ssh
 systemctl start ssh
@@ -24,5 +24,6 @@ ssh majid@192.168.61.131
 #then enter passphrase
 eval $(ssh-agent)
 ssh-add
-ssh majid@192.168.61.131 #then Enter in VM2 Without passphrase
+ssh majid@192.168.61.131
+#then Enter in VM2 Without passphrase
 ```
