@@ -4,21 +4,21 @@
 systemctl status ssh
 systemctl start ssh
 ```
-### 2. in vm1:
+### 2. in vm1: Generate Key in VM1
 ```yml
 ssh-keygen -t rsa (Enter passphrase)
 ls -ltrha /home/majidm/
 cd .ssh/
 ls
 ```
-### 3. in vm2(Target):
+### 3. in vm2(Target): Generate Key in VM2
 ```yml
 ssh-keygen -t rsa
 ls -ltrha /home/majid/
 cd .ssh/
 ls
 ```
-### 4. in vm1: 
+### 4. in vm1: Copy key to VM2
 ```yml
 ssh-copy-id majid@192.168.61.131
 ssh majid@192.168.61.131
