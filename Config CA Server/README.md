@@ -1,7 +1,9 @@
+in Complete and Real Senario, First install and Config Ca Server in Linux(ubuntu) by easy-rsa and then in Step 2 As an enterprise client, we generate a request file (CSR) by the received public key and present it to the person in charge of the CA server, and in the third step, we generate a certificate in the CA server and deliver it to the client.
+
 ### Step 1 - Install and Config easy-rsa on Ubuntu
 At some point, usually multiple points, a sysadmin/operator/devops/whatever needs a certificate authority (CA). At first this seems easy, then it seems hard, then you think you know what 
 you are doing but you don’t, and I’m not sure you ever do. But you still need that CA. Even if you are using some sort of fancy certificate managment system (such as Hashicorp Vault) you 
-still probably need to manage your top level CA.
+still probably need to manage your top level CA in your Organization.
 
 
 1-1- install easy-rsa
@@ -56,6 +58,9 @@ Copy ca.crt file to path /etc/pki/ca-trust/source/anchors and run this command:
 ```yml
 update-ca-trust
 ```
+
+### Step 2 - Generate CSR file Like a customer
+
 
 
 
