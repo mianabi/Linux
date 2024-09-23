@@ -1,4 +1,4 @@
-in Complete and Real Senario, First install and Config Ca Server in Linux(ubuntu) by easy-rsa and then in Step 2 As an enterprise client, we generate a request file (CSR) by the received public key and present it to the person in charge of the CA server, and in the third step, we generate a certificate in the CA server and deliver it to the client.
+in Complete and Real Senario, First install and Config Ca Server in Linux(ubuntu) by easy-rsa and then in Step 2 As an enterprise client, we generate a request file (CSR) by the received public key and present it to the official of the CA server, and in the third step, we generate a certificate in the CA server and deliver it to the client.
 
 ### Step 1 - Install and Config easy-rsa on Ubuntu
 At some point, usually multiple points, a sysadmin/operator/devops/whatever needs a certificate authority (CA). At first this seems easy, then it seems hard, then you think you know what 
@@ -72,7 +72,10 @@ openssl genrsa -aes256 -out test.com.key 2048
 openssl req -new -key test.com.key -out test.com.csr
 # enter Passphrase that entered in Step 2-1 and enter Country, City, organization and OU and enter Common name(cn) that is very important(*.test.com or www.test.com)
 ```
-2-3 - 
+We give this CSR file to the official of the CA server to get the certificate
+
+### Step 3 - Generate CSR file Like a customer(in linux)
+
 
 
 
