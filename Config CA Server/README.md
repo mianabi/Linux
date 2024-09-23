@@ -59,7 +59,22 @@ Copy ca.crt file to path /etc/pki/ca-trust/source/anchors and run this command:
 update-ca-trust
 ```
 
-### Step 2 - Generate CSR file Like a customer
+### Step 2 - Generate CSR file Like a customer(in linux)
+in this sample we want to create CSR file to my site(www.test.com)
+2-1- Create private key for ourselves(Client)
+```yml
+openssl genrsa -aes256 -out test.com.key 2048
+# entar Passphrase
+```
+
+2-2- now Create CSR file:
+```yml
+openssl req -new -key test.com.key -out test.com.csr
+# enter Passphrase that entered in Step 2-1 and enter Country, City, organization and OU and enter Common name(cn) that is very important(*.test.com or www.test.com)
+```
+2-3 - 
+
+
 
 
 
