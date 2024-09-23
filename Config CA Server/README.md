@@ -75,6 +75,7 @@ openssl req -new -key test.com.key -out test.com.csr
 We give this CSR file(test.com.csr) to the official of the CA server to get the Certificate
 
 ### Step 3 - Generate Certificate
+
 3-1- in Ca Server run this Command on path /usr/share/easy-rsa
 ```yml
 cd /usr/share/easy-rsa
@@ -85,6 +86,7 @@ cd /usr/share/easy-rsa
 ```
 
 3-2- We must Deliver file SomeClient.crt in folder issued to Client.
+
 3-2- for Revokation of Delivered Certificate enter this Command
 ```yml
 ./easyrsa revoke SomeClient.crt
