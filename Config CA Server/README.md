@@ -27,4 +27,37 @@ cd /usr/share/easy-rsa
 init-pki complete; you may now create a CA or requests.
 Your newly created PKI dir is: /usr/share/easy-rsa/pki
 
+# to create private and public key on CA Server run below Command
+ ./easyrsa build-ca
+
+# and enter Passphrase and General Common Name For CA Server. Some Like this:
+nter New CA Key Passphrase: 
+Re-Enter New CA Key Passphrase: 
+You are about to be asked to enter information that will be incorporated
+into your certificate request.
+What you are about to enter is what is called a Distinguished Name or a DN.
+There are quite a few fields but you can leave some blank
+For some fields there will be a default value,
+If you enter '.', the field will be left blank.
+-----
+Common Name (eg: your user, host, or server name) [Easy-RSA CA]: *MyCA*
+
+CA creation complete and you may now import and sign cert requests.
+Your new CA certificate file for publishing is at:
+/usr/share/easy-rsa/pki/ca.crt
+```
+public key of CA Server Generate in path /usr/share/easy-rsa/ca.crt and And this public key should be given to customers or clients to trust. Now, any computer or server that has this file will be trusted by the Linux server.
+
+in path /usr/share/easy-rsa/private There is a ca.crt file that is very important and must be protected.
+
+1-3- Trust public key in linux Server(client)
+
+Copy ca.crt file to path /etc/pki/ca-trust/source/anchors and run this command:
+```yml
+update-ca-trust
+```
+
+
+
+
 
