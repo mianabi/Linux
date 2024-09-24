@@ -52,9 +52,9 @@ public key of CA Server Generate in path /usr/share/easy-rsa/ca.crt and And this
 
 in path /usr/share/easy-rsa/private There is a ca.crt file that is very important and must be protected.
 
-1-3- Trust public key in linux Server(client)
+Note: You can Trust public key in linux Server(client):
 
-Copy ca.crt file to path /etc/pki/ca-trust/source/anchors and run this command:
+* Copy ca.crt file to path /etc/pki/ca-trust/source/anchors and run this command:
 ```yml
 update-ca-trust
 ```
